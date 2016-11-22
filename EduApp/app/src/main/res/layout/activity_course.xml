@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/main_content"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true"
+                                                 tools:context="com.example.hp.eduapp.CourseActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#000000"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="4dp"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/secondary_text"
+            app:tabTextColor="@color/divider"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/course_screen_fab_layout"
+        android:background="#f0f0f0">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/course_screen_fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            app:fab_addButtonColorNormal="@color/colorAccent"
+            app:fab_addButtonColorPressed="@color/colorAccent"
+            app:fab_addButtonPlusIconColor="#000000"
+            app:fab_addButtonStrokeVisible="false"
+            app:fab_labelStyle="@style/menu_labels_style"
+            app:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_link_fab"
+                app:fab_size="mini"
+                app:fab_title="@string/add_link_label"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_plusIconColor="#ffffff"
+                app:fab_icon="@drawable/ic_bookmark_border_black_24dp"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_picture_fab"
+                app:fab_size="mini"
+                app:fab_title="@string/add_picture_label"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_plusIconColor="#ffffff"
+                app:fab_icon="@drawable/ic_image_black_24dp"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_file_fab"
+                app:fab_size="mini"
+                app:fab_title="@string/add_file_label"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_plusIconColor="#ffffff"
+                app:fab_icon="@drawable/ic_folder_open_black_24dp"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_reminders_fab"
+                app:fab_size="mini"
+                app:fab_title="@string/add_reminders_label"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_plusIconColor="#ffffff"
+                app:fab_icon="@drawable/ic_today_black_24dp"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

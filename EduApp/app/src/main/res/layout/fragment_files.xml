@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" android:orientation="vertical"
+             tools:context="com.example.hp.eduapp.fragments.FilesFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pictures_title_textView"
+        android:text="@string/pictures_title_text"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pictures_recyclerview"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/files_title_textView"
+        android:text="@string/files_title_text"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:id="@+id/files_listview"
+        android:minHeight="?android:attr/listPreferredItemHeight"/>
+
+</LinearLayout>

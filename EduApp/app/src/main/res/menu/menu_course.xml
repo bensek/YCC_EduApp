@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.radman.EduApp.CourseActivity">
+
+    <item
+        android:id="@+id/action_course_details"
+        android:orderInCategory="90"
+        android:title="@string/course_details"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+</menu>

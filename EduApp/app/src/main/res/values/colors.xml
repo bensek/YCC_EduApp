@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cyan 300-->
+    <color name="colorPrimary">#B2EBF2</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#F50057</color>
+
+    <!--<color name="colorPrimary">#00BCD4</color>-->
+    <!--&lt;!&ndash;<color name="colorPrimary">#3F51B5</color>&ndash;&gt;-->
+    <!--<color name="colorPrimaryDark">#0097A7</color>-->
+    <!--&lt;!&ndash;<color name="colorPrimaryDark">#303F9F</color>&ndash;&gt;-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!-- Common blue-->
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+</resources>

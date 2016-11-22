@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "839795629333",
+    "firebase_url": "https://educapplication-95d23.firebaseio.com",
+    "project_id": "educapplication-95d23",
+    "storage_bucket": "educapplication-95d23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839795629333:android:487d599fe8882677",
+        "android_client_info": {
+          "package_name": "com.example.hp.eduapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839795629333-ro17a2bms7rll24vsllfc8besd7oliul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiNGOjzj17QG8H2mM3JzOtOyUOI7vanzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

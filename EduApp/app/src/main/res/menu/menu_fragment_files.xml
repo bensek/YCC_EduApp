@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.radman.eduapp.fragments.FilesFragment">
+
+    <item
+        android:id="@+id/action_camera"
+        android:title="@string/add_camera"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_camera_alt_black_24dp"/>
+
+</menu>

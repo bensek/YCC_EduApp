@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.hp.eduapp.ProfileActivity"
+        tools:showIn="@layout/activity_profile">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/header_cover_image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:src="@drawable/header_background"-->
+            <!--android:scaleType="centerCrop"/>-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/user_profile_photo"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_below="@+id/header_cover_image"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="-60dp"-->
+            <!--android:background="@drawable/profile_circular_border_imageview"-->
+            <!--android:elevation="5dp"-->
+            <!--android:padding="20dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/profile" />-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/profile_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/header_cover_image"-->
+            <!--android:background="#ebca0707"-->
+            <!--android:elevation="4dp"-->
+            <!--android:paddingBottom="24dp">-->
+
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/add_friend"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_toLeftOf="@+id/drop_down_option_menu"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/ic_action_user_add" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/drop_down_option_menu"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/ic_action_overflow" />&ndash;&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/user_profile_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="76dp"-->
+                <!--android:text="Username"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="24sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/user_profile_short_bio"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/user_profile_name"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="12dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Android free tutorials and example"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_information"
+                android:layout_marginLeft="5dp"
+                android:textColor="#00838F"
+                />
+            <TextView
+                android:id="@+id/textview_names"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="Ben Sekyondwa" />
+
+            <TextView
+                android:id="@+id/textview_email_profile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="bensek73@gmail.com" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="+ 256 773343543" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_information"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#00838F"
+            />
+        <TextView
+            android:id="@+id/textview_programme_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Bsc Computer engineering" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Secord year, Evening" />
+
+
+        <TextView
+            android:id="@+id/textView_instution_with_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Makerere University" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#fff"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:text="Kampala, Uganda" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

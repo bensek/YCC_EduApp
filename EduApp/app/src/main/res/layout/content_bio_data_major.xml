@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".sign_up_screens.BioDataMajor"
+    tools:showIn="@layout/activity_bio_data_major">
+
+    <TextView
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/by_filling_in_this_info_you_"
+        android:id="@+id/textView5"
+         />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Add programme and institution"-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="20dp"/>-->
+
+
+    <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp">-->
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Level :"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_degrees"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+    <EditText
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name e.g Bsc Computer engineering"
+        android:id="@+id/editText_major_name"
+        android:maxLines="1"
+        android:inputType="textPersonName"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= " Year of study:"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_year">
+        </Spinner>
+
+        <RadioGroup
+            android:id="@+id/radioDay_Eve"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radioDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAY"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioEve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EVE"
+                android:onClick="onRadioButtonClicked"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Add Your Institution"-->
+        <!--android:id="@+id/textViewAddInst"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="20dp"/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Institution/University"
+            android:id="@+id/editText_institution"
+            android:maxLines="1"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address e.g Kampala, Uganda"
+            android:id="@+id/editText_address"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:id="@+id/btn_screen2"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>
+</ScrollView>

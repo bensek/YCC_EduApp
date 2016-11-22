@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.NotificationsFragment">
+
+    <!--<GridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="4dp"-->
+        <!--android:id="@+id/notifications_recyclerview"-->
+        <!--android:horizontalSpacing="4dp"-->
+        <!--android:verticalSpacing="4dp"-->
+        <!--android:numColumns="2"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notifications_recyclerview"
+        android:focusable="true"
+        android:paddingTop="24dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:clickable="true"/>
+
+</FrameLayout>

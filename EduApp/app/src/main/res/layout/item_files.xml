@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/files_icon_imageView"
+        android:src="@drawable/course_icon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/files_name_textView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"/>
+
+</LinearLayout>

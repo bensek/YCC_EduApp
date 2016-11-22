@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@drawable/header_background">
+    <!--<ImageView-->
+        <!--android:id="@+id/header_cover_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:src="@drawable/header_background"-->
+        <!--android:scaleType="centerCrop"/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/profile_circular_border_imageview"
+        android:scaleType="centerCrop"
+        android:padding="30dp"
+        android:src="@drawable/profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/add_photo"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="add photo"
+        android:textAllCaps="false"
+        android:clickable="true"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bensek"
+            android:textSize="25sp"
+            android:id="@+id/textView_username"
+            android:layout_centerVertical="true"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Computer Engineering"
+            android:id="@+id/textView_major"
+            android:layout_alignBottom="@+id/user_profile_photo"
+            android:layout_alignLeft="@+id/textView_username"
+            android:layout_alignStart="@+id/textView_username"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/profile_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/header_cover_image"-->
+        <!--android:background="#ebca0707"-->
+        <!--android:elevation="4dp"-->
+        <!--android:paddingBottom="24dp">-->
+
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/add_friend"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_toLeftOf="@+id/drop_down_option_menu"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/ic_action_user_add" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/drop_down_option_menu"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/ic_action_overflow" />&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/user_profile_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="76dp"-->
+            <!--android:text="Username"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/user_profile_short_bio"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/user_profile_name"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Android free tutorials and example"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

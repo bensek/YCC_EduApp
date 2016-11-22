@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hp.eduapp.GroupsActivity">
+    <item
+        android:id="@+id/action_settings_groups"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Group Settings"
+        app:showAsAction="always" />
+</menu>

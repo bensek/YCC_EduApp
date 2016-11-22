@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="272dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SigninActivity"
+    android:clickable="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="...info..."
+        android:id="@+id/textview_title"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="add your slogan here...."
+        android:id="@+id/textview_slogan"
+        android:layout_below="@+id/textview_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/editText_username_in"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_password_in"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:id="@+id/button_signin"
+        android:layout_below="@+id/textview_forgotpassword"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Forgot password?"
+        android:id="@+id/textview_forgotpassword"
+        android:layout_gravity="right"
+        />
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_below="@+id/textview_or"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_alignRight="@+id/button_signin"-->
+        <!--android:layout_alignEnd="@+id/button_signin" />-->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/don_t_have_an_account_yet_sign_up"
+            android:id="@+id/textView_signup_clickable"
+            android:clickable="true"
+            />
+
+
+</LinearLayout>
+
+</ScrollView>
